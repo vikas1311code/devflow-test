@@ -9,4 +9,4 @@ console.log('testing risk score feature')
 // blast radius test
 // risk test 2
 // permission fix test
-function fetchUser(id) { return db.query('SELECT * FROM users WHERE id = ' + id); }
+function fetchUser(id) { return db.query('SELECT * FROM users WHERE id = $1', [id]); }
