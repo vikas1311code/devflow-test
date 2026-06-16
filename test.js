@@ -13,3 +13,4 @@ function fetchUser(id) { return db.query('SELECT * FROM users WHERE id = $1', [i
 // retry after 503
 // permission fix v2
 // switch back to flash-lite
+// final test after cooldown
