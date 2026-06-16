@@ -13,6 +13,8 @@ function fetchUser(id) {
   // This is a test function and does not represent production code.
   // In a real application, database interactions should be handled with
   // proper error handling and security considerations beyond this example.
+  // IMPORTANT: In a production environment, ensure that database queries
+  // are parameterized to prevent SQL injection vulnerabilities.
   return db.query('SELECT * FROM users WHERE id = $1', [id]); 
 }// quota reset test
 // retry after 503
